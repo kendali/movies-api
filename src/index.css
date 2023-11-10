@@ -1,0 +1,47 @@
+#root{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+:root{
+  --main-color: #190482;
+  --second-color: #7752FE;
+  --third-color: #8E8FFA;
+  --four-color: #C2D9FF;
+}
+
+.bg-main{
+  background-color: var(--main-color);
+}
+.bg-second{
+  background-color: var(--second-color);
+}
+.bg-third{
+  background-color: var(--third-color);
+}
+.bg-four{
+  background-color: var(--four-color);
+}
+
+
+.f-main{
+  color: var(--main-color);
+}
+.f-second{
+  color: var(--second-color);
+}
+.f-third{
+  color: var(--third-color);
+}
+.f-four{
+  color: var(--four-color);
+}
+
+
+.btn-main{
+  background-color: var(--third-color);
+  border: none;
+  outline: none;
+  color: white;
+}
+
