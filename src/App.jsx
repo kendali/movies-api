@@ -20,13 +20,9 @@ const App = () => {
   
 
   
-  const handleClick = ()=>{
-    console.log(res)
-  }  
   return (
     <div>
-      <h1>Hello</h1>
-      <button onClick={handleClick}>click</button>
+
     </div>
   )
 }
