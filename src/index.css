@@ -1,5 +1,5 @@
 #root{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 
@@ -39,8 +39,7 @@
 
 
 .btn-main{
-  background-color: var(--third-color);
-  border: none;
+  border: none; 
   outline: none;
   color: white;
 }
@@ -59,3 +58,4 @@ a{
 .icon-search{
   cursor: pointer;
 }
+

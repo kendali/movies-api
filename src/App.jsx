@@ -3,6 +3,8 @@ import NavBar from "./components/NavBar"
 import Home from "./pages/Home"
 import Movies from "./components/Movies"
 import TvShows from "./components/TvShows"
+import Footer from "./components/Footer"
+import Error from "./pages/Error"
 
 
 const App = () => {
@@ -15,6 +17,7 @@ const App = () => {
           <Route path="/Movies" element={<Movies />} />
           <Route path="/TV Shows" element={<TvShows />} />
         </Routes>
+        <Footer />
     </BrowserRouter>
 
   )
