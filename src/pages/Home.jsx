@@ -1,5 +1,6 @@
 
 import hero from '../assets/undraw_home_cinema_l7yl(1).svg';
+import Popular from '../components/Popular';
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
           <img className="img-fluid" width={500} src={hero} alt="img-hero" />
           </div>
         </div>
+        <Popular />
       </div>
     </div>
   )

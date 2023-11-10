@@ -45,3 +45,17 @@
   color: white;
 }
 
+a{
+  text-decoration: none;
+}
+
+.f-ct{
+  border: none;
+  outline: none;
+  border-bottom: 2px solid var(--second-color);
+  padding: 20px;
+}
+
+.icon-search{
+  cursor: pointer;
+}

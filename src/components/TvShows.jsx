@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
-const Movies = () => {
+const TvShows = () => {
   const [res, setRes] = useState([])
 
-  const url = 'https://api.themoviedb.org/3/trending/movie/day?language=en-US';
+  const url = 'https://api.themoviedb.org/3/trending/tv/day?language=en-US';
   const options = {
     method: 'GET',
     headers: {
@@ -58,4 +58,4 @@ const Movies = () => {
   )
 }
 
-export default Movies
+export default TvShows
