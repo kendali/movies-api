@@ -13,7 +13,7 @@ const Home = () => {
             <span className='lead'>Millions of movies, TV shows and people to discover.</span>
             <br />
             <Link to='/Movies'>
-            <button className='btn-main w-50 py-3 rounded bg-main'>Watch Now</button>
+            <button className='btn-main w-50 py-3 rounded bg-main shadow'>Watch Now</button>
             </Link>
           </div>
           <div className="col-md-6">

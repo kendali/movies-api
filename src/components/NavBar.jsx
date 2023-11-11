@@ -2,14 +2,44 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
-    const [show,setShow] = useState(false)
+    const [show, setShow] = useState(false)
     const navList = ['Home', 'Movies', 'TV Shows', 'More'];
 
-    const handleClickSearch = ()=>{
+    const handleClickSearch = () => {
         setTimeout(() => {
             setShow(!show)
         }, 150);
     }
+    // Search Input : 
+    // const [query, setQuery] = useState('');
+    // const [results, setResults] = useState([]);
+
+    // const handleInputChange = (e) => {
+    //     setQuery(e.target.value);
+    // };
+
+    // const handleSearch = () => {
+    //     fetch(
+    //         `https://api.themoviedb.org/3/search/all?query=${query}&language=en-US&api_key=7ebc4747a0fa624bb53d1e776e476101`
+    //     )
+    //         .then((response) => response.json())
+    //         .then((data) => console.log(data.results))
+    //         .catch((error) => console.error('Error fetching search results:', error));
+    // };
+    // const url = `https://api.themoviedb.org/3/trending/all?query=${query}?language=en-US`;
+    // const options = {
+    //     method: 'GET',
+    //     headers: {
+    //         accept: 'application/json',
+    //         Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3ZWJjNDc0N2EwZmE2MjRiYjUzZDFlNzc2ZTQ3NjEwMSIsInN1YiI6IjY1NGE1NjM0MzkxYjljMDExZDMwMDVhMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.VShTFbPKOM-EGatsl2UDV9nxkOH3PRax8ptmbRBartA'
+    //     }
+    // };
+
+    // useEffect(() => {
+    //     fetch(url, options)
+    //         .then(res => res.json())
+    //         .then(json => console.log(json.results));
+    // }, []);
     return (
         <div>
             <nav className="navbar navbar-expand-lg bg-main shadow p-3">
@@ -41,12 +71,12 @@ const NavBar = () => {
                 </div>
             </nav>
             {
-                show ? 
-                <div className="search position-relative">
-                <i className="fa-solid fa-magnifying-glass position-absolute top-50 start-0 translate-middle-y f-third fs-3 px-2   "></i>
-                <input type="text" className="w-100 f-ct px-5" placeholder="Search for a movie , tv show..." />
-            </div>:
-            null 
+                show ?
+                    <div className="search position-relative">
+                        <i  className="fa-solid fa-magnifying-glass position-absolute top-50 start-0 translate-middle-y f-third fs-3 px-2   "></i>
+                        <input  type="text" className="w-100 f-ct px-5" placeholder="Search for a movie , tv show..." />
+                    </div> :
+                    null
             }
         </div>
     )

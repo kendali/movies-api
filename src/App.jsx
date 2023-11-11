@@ -4,7 +4,6 @@ import Home from "./pages/Home"
 import Movies from "./components/Movies"
 import TvShows from "./components/TvShows"
 import Footer from "./components/Footer"
-import Error from "./pages/Error"
 
 
 const App = () => {

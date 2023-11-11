@@ -23,7 +23,7 @@ const TvShows = () => {
     <div className="container mt-5 py-5">
       <div className="bg-second p-3 rounded shadow text-center">
         <i className="fa-solid fa-truck-ramp-box f-four fs-1"></i>
-        <h4 className="display-5 text-light">Free To Watch</h4>
+        <h4 className="display-5 text-light">Tv Shows</h4>
       </div>
 
       <div className="fetch-movies mt-5 row">
@@ -32,7 +32,7 @@ const TvShows = () => {
             <div key={movie.id} className="col-md-3 mb-3">
               <img className="img-fluid card-img-top rounded-top shadow" src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} />
               <div className="body p-2 border rounded-bottom">
-                <h1>{`${movie.name} || ${movie.title}`}</h1>
+                <h2>{`${movie.name} `}</h2>
                 <div className="type p-2 d-flex align-items-center justify-content-between mb-3">
                   <i className="fa-solid fa-font-awesome fs-2 f-third"></i>
                   <span className="fw-semibold text-dark">{movie.media_type}</span>

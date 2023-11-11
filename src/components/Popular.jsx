@@ -32,7 +32,7 @@ const Popular = () => {
             <div key={movie.id} className="col-md-4 mb-3">
               <img className="img-fluid card-img-top rounded-top shadow" src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} />
               <div className="body p-2 border rounded-bottom">
-                <h1>{`${movie.name} || ${movie.title}`}</h1>
+                <h1>{`${(movie.name || movie.title)}`}</h1>
                 <div className="type p-2 d-flex align-items-center justify-content-between mb-3">
                   <i className="fa-solid fa-font-awesome fs-2 f-third"></i>
                   <span className="fw-semibold text-dark">{movie.media_type}</span>
